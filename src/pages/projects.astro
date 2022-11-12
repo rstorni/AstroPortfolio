@@ -1,4 +1,5 @@
 ---
+const pageTitle = "Projects";
 ---
 
 <html lang="en">
@@ -7,15 +8,21 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<a href="/">Home</a>
 		<a href="/about/">About</a>
         <a href="/projects/">Projects</a>
 
-		<h1>Technical Portfolio</h1>
+		<h1>{pageTitle}</h1>
 		<h2>Check out all the cool things I've made!</h2>
+
+        <ul>
+            <li><a href="/posts/post-1/">Thread Library</a></li>
+            <li><a href="/posts/post-2/">Disk Scheduler</a></li>
+            <li><a href="/posts/post-3/">2D platformer</a></li>
+        </ul>
 
         <p>This astro project is one of them </p>  
 	</body>
